@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta name="description" content="Szamalk">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="description" content="Szamalk" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .button {
+      background-color: green;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
     <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="google.com">Menü 1</a></li>
-                    <li><a href="microsoft.com">Menü 2</a></li>
-                    <li><a href="szamalk-szalezi.hu">Menü 3</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <div class="oldal">
-                <h1>Eladó termékek</h1>
-                <div class="kontener">
-                    <div class="kep1">
-                    <img src="kepek/Hajdu_tarcsas_mosogep_407172383351889.jpg" alt="Elado tárcsás hajdumosógép 30000Ft">
-                    <p>Elado tárcsás hajdumosógép</p>
-                    <p>30000Ft</p>
-                    
-                </div>
-                <div class="kep2">
-                    <img src="kepek/Stalker_IX_CB_radio_936122389097776.jpg" alt="Stalker IX 2X40 csatornás">
-                    <p>Stalker IX 2X40 csatornás CB adóvevő</p>
-                    <p>20000Ft</p>
-                </div>
-                    <div class="kep3">
-                        <img src="kepek/Crab-body-7f9ae78.jpg" alt="Eladó Átok">
-                        <p>Tenger gyümölcse nagyker áron</p>
-                        <p>Ajánlatért érdeklődjön</p>
-                    </div>
-                    <div class="kep4">
-                        <img src="kepek/bluray.jpg" alt="">
-                        <p>Mr. Robot 1. Évad Blu-Ray</p>
-                        <p>5000 Ft</p>
-                    </div>
-                </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="google.com">Menü 1</a></li>
+            <li><a href="microsoft.com">Menü 2</a></li>
+            <li><a href="szamalk-szalezi.hu">Menü 3</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <h1>Eladó termékek</h1>
+        <div class="kontener">
+          <div class="kep1">
+            <img
+              src="kepek/Hajdu_tarcsas_mosogep_407172383351889.jpg"
+              alt="Elado tárcsás hajdumosógép 30000Ft"
+            />
+            <p>Elado tárcsás hajdumosógép</p>
+            <p>30000Ft</p>
+            <button class="button">kosárba</button>
+          </div>
+          <div class="kep2">
+            <img
+              src="kepek/Stalker_IX_CB_radio_936122389097776.jpg"
+              alt="Stalker IX 2X40 csatornás"
+            />
+            <p>Stalker IX 2X40 csatornás CB adóvevő</p>
+            <p>20000Ft</p>
+            <button class="button">kosárba</button>
+          </div>
+          <div class="kep3">
+            <img src="kepek/Crab-body-7f9ae78.jpg" alt="Eladó Átok" />
+            <p>Tenger gyümölcse nagyker áron</p>
+            <p>Ajánlatért érdeklődjön</p>
+            <button class="button">kosárba</button>
+          </div>
+          <div class="kep4">
+            <img src="kepek/bluray.jpg" alt="Mr. Robot" />
+            <p>Mr. Robot 1. Évad Blu-Ray</p>
+            <p>5000 Ft</p>
+            <button class="button">kosárba</button>
             </div>
-        </article>
-        <aside>
-            <p>A kosár tartalma</p>
-    
-    
-        </aside>
-        <footer>
-            <p>Copyright 2023</p>
-        </footer>
+          <div class="kep5">
+              <img src="kepek/mac.jpg" alt="MacGyver" />
+              <p>MacGyver (1985) teljes sorozat DVDn</p>
+              <p>50000 Ft</p>
+              <button class="button">kosárba</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <h2>A kosár tartalma</h2>
+        <p>*Stalker IX</p>
+        <p>*MacGyver DVD</p>
+        <p class="warning">*FIGYELEM, A KÉT TERMÉK EGYÜTTES VÁSÁRLÁSA VESZÉLYES*</p>
+        <p>Hajdúmosógép</p>
+        <p>Összesen: 70000 Ft</p>
+      </aside>
+      <footer>
+        <p>Copyright 2023</p>
+      </footer>
     </main>
-    
-</body>
+  </body>
 </html>

@@ -21,16 +21,17 @@ main{
     background-color: whitesmoke;
     display: grid;
     grid-template-areas: 
-    "h h h "
-    "a a j"
-    "f f f"
+    "h h h  "
+    "a a j "
+    "f f f "
     ;
 }
 ul{
     
     list-style: none;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 a{
 
@@ -39,9 +40,8 @@ a{
 header{
     grid-area: h;
 }
-nav{
-    grid-area: n;
-}
+
+
 article {
     grid-area: a;
     background-color: whitesmoke;
@@ -62,22 +62,52 @@ footer{
 }
 
 img{
-    width: 50%;
+    width: 70%;
 }
 
+h2 {
+    text-align: center;
+}
 
-@media screen and (max-width: 600px) {
+.warning{
+    color: red;
+}
+
+@media only screen and (max-width: 375px) {
     body {
       font-size: 5vw;
       width: 100%;
     }
     main{
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "h"
-        "n"
         "a"
-        "b" 
+        "a"
+        "a"
+        "a"
+        "j"
+        "f"
+        ;
+    }
+}
+
+@media screen and (max-width: 314px) {
+    body{
+        width: 100%;
+    }
+
+    main{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        grid-template-areas:
+        "h"
+        "a"
+        "a"
+        "a"
+        "a"
+        "a"
         "j"
         "f"
         ;
