@@ -46,9 +46,7 @@ article {
     grid-area: a;
     background-color: whitesmoke;
 }
-article .kontener{
-    background-color: whitesmoke;
-}
+
 aside{
     grid-area: j;
 }
@@ -56,7 +54,8 @@ aside{
 footer{
     grid-area: f;
 }
-.kontener{
+.kontener{ 
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -78,38 +77,20 @@ h2 {
       font-size: 5vw;
       width: 100%;
     }
-    main{
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "h"
-        "a"
-        "a"
-        "a"
-        "a"
-        "j"
-        "f"
-        ;
+    .kontener{
+
+        grid-template-columns: auto;
     }
 }
 
 @media screen and (max-width: 314px) {
     body{
         width: 100%;
+        font-size: 6vw;
     }
 
-    main{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        
-        grid-template-areas:
-        "h"
-        "a"
-        "a"
-        "a"
-        "a"
-        "a"
-        "j"
-        "f"
-        ;
+    .kontener{ 
+       
+        grid-template-columns: auto;
     }
 }
